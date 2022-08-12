@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: auto;
+    height: 100%;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+
+    font-size: 20px;
+    background-color: black;
+    background: linear-gradient(0deg, rgba(0, 101, 37, 0.3), rgba(0, 0, 0, 0.3)), url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    position: absolute;
+    position: fixed;
+    background: linear-gradient(0deg, rgba(0, 101, 37, 0.3), rgba(0, 0, 0, 0.3)), url("./images/sidebar.jpg");
+    width: 105px;
+    height: 100%;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+nav li {
+    padding: 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.bmi_box input{
+    text-align: center;
+    color: rgb(0, 12, 2);
+    font-size: 0.9rem;
+}
+nav li:hover {
+    color: rgb(194, 194, 194);
+}
+
+nav li:active {
+    color: rgb(0, 189, 44);
+}
+
+.flex {
+    padding-left: 105px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+div {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* items inside bmi */
+.bmi_box {
+    text-align: center;
+    border: 2px solid;
+    width: 350px;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: none;
+    border: 10px double;
+    box-sizing: border-box;
+    box-shadow:
+        inset 0 0 0 12px #ccc,
+        inset 0 0 0 16px #bbb,
+        inset 0 0 0 20px #aaa,
+        inset 0 0 0 20px #888;
+
+}
+
+.bmi_box table {
+    margin: auto;
+    text-align: left;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 17px;
+}
+
+table th {
+    background-color: rgb(147, 189, 176);
+    color: rgb(0, 0, 0);
+}
+
+.bmi_box label {
+    padding: 0 20px;
+}
+
+.bmi_flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: visible;
+}
+.bmi_box2 {
+    height: 500px;
+}
+
+/* end of items inside bmi */
+
+
+/* animation classes */
+.stretch {
+    transition: width 700ms;
+    width: 0;
+    height: 100vh;
+    padding: 0;
+    border: none;
+    border: 10px solid;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.stretch_full {
+    width: 100vw;
+    background-color: rgb(228, 228, 228);
+}
+
+/* end of animation classes */
+.nothing {
+    display: none;
+}
+
+.colorpicker {
+    color: rgb(0, 255, 200);
+}
+
+.format p,
+h2 {
+    padding: 10px 20px;
+}
+
+.format ul {
+    padding: 0 40px;
+}
+
+.format li {
+    padding-top: 2px;
+}
+
+section {
+    overflow-y: scroll;
+}
+
+section h1 {
+    background-color: rgb(147, 189, 176);
+    font-size: 1.5rem;
+    padding: 2px;
+}
+
+section h2 {
+    font-size: 1rem;
+}
+
+.flex2 {
+    display: inline;
+    padding: 20px;
+}
+
+input.colorred{
+    background-color: rgb(255, 131, 127);
+    color: rgb(0, 54, 19);
+}
+@media (min-width: 760px) {
+    .flex2 {
+        display: flex;
+        justify-content: center;
+        height: 350px;
+    }
+
+    .flex3 {
+        justify-content: left;
+        display: block;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .flex2 {
+        height: 250px;
+    }
+
+    .flex3 {
+        display: flex;
+        height: 100px;
+    }
+
+}
+
+@media (min-width: 919.20px) {
+    .bmi_flex {
+        gap: 20px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    table,
+    th,
+    td {
+        padding: 0;
+    }
+
+    .bmi_box2 {
+        height: 300px;
+    }
+    .bmi_box input{
+        width: 100px;
+    }
+}
+/* redo this */
+
